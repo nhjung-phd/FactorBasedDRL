@@ -22,7 +22,7 @@ Using the Environment
 This project is designed for Google Colab and supports end-to-end experimentation on portfolio management using reinforcement learning.
 
 Main Components
-main.ipynb: Colab notebook to train/test PPO models with different reward designs.
+- main.ipynb: Colab notebook to train/test PPO models with different reward designs.
 
 Descriptive Statistics
 ---
