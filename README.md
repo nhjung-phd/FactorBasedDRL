@@ -104,17 +104,17 @@ Result
 
 - Equity Asset
   <p align="center">
-  <img src="Result/Fig1.png" alt="Fig 1. Equity Asset PPO" width="600"/>
+  <img src="Result/Fig1.png" alt="Fig 1. Equity Asset PPO" />
   </p>
 
 - Crypto Asset
   <p align="center">
-  <img src="Result/Fig2.png" alt="Fig 2. Crypto Asset PPO" width="600"/>
+  <img src="Result/Fig2.png" alt="Fig 2. Crypto Asset PPO" />
   </p>
 
 - Macro Asset
   <p align="center">
-  <img src="Result/Fig3.png" alt="Fig 3. Macro Asset PPO" width="600"/>
+  <img src="Result/Fig3.png" alt="Fig 3. Macro Asset PPO" />
   </p>
 - Multi Asset (PPO)
 
