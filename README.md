@@ -2,6 +2,27 @@
 
 Introduction
 ---
+This repository accompanies the study:
+"Factor-Based Deep Reinforcement Learning for Asset Allocation: Comparative Analysis of Static and Dynamic Beta Reward Designs"
+
+Motivated by limitations in return-only reward functions in portfolio optimization, this project introduces a reinforcement learning framework that incorporates time-varying factor exposure (e.g., momentum, volatility, volume) into both the state representation and reward design. The framework compares seven reward structures:
+
+- Equal Weights
+- Mean Variance
+- Sharpe Ratio Reward
+- Sortino Ratio Reward
+- Momentum-β Reward
+- Static-β Reward
+- Dynamic-β Reward
+
+Experiments are conducted using Proximal Policy Optimization (PPO) on multi-asset datasets including equities, crypto, macro assets, and multi-asset portfolios, over long historical horizons.
+
+Using the Environment
+---
+This project is designed for Google Colab and supports end-to-end experimentation on portfolio management using reinforcement learning.
+
+Main Components
+main.ipynb: Colab notebook to train/test PPO models with different reward designs.
 
 Descriptive Statistics
 ---
