@@ -103,11 +103,19 @@ Result
 ---
 
 - Equity Asset
+  <p align="center">
+  <img src="Result/Fig1.png" alt="Fig 1. Equity Asset PPO" width="600"/>
+  </p>
 
 - Crypto Asset
+  <p align="center">
+  <img src="Result/Fig2.png" alt="Fig 2. Crypto Asset PPO" width="600"/>
+  </p>
 
 - Macro Asset
-
+  <p align="center">
+  <img src="Result/Fig3.png" alt="Fig 3. Macro Asset PPO" width="600"/>
+  </p>
 - Multi Asset (PPO)
 
 - Multi Asset (SAC)
