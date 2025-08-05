@@ -77,10 +77,23 @@ Descriptive Statistics
 | WMT      | 792.0   | 61.5137  | 18.7950  | 37.8719  | 47.2976  | 52.8062  | 78.0749  | 104.5096  |
 | XOM      | 792.0   | 102.2846 | 10.1172  | 75.0122  | 97.2676  | 103.4963 | 109.5824 | 122.1211  |
 
-Setup
----
 
 
 Result
+---
+
+- Equity Asset
+
+- Crypto Asset
+
+- Macro Asset
+
+- Multi Asset (PPO)
+
+- Multi Asset (SAC)
+
+- Multi Asset (TD3)
+
+Setup
 ---
 
