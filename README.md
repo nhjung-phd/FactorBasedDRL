@@ -103,6 +103,7 @@ Result
 ---
 
 - Equity Asset
+  Result/Fig1.png
 
 - Crypto Asset
 
