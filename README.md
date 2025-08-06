@@ -116,7 +116,11 @@ Result
   <p align="center">
   <img src="Result/Fig3.png" alt="Fig 3. Macro Asset PPO" />
   </p>
+
 - Multi Asset (PPO)
+  <p align="center">
+  <img src="Result/Fig4.png" alt="Fig 4. Multi Asset PPO" />
+  </p>
 
 - Multi Asset (SAC)
 
