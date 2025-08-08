@@ -123,6 +123,9 @@ Result
   </p>
 
 - Multi Asset (SAC)
+  <p align="center">
+  <img src="Result/Fig5.png" alt="Fig 5. Multi Asset SAC" />
+  </p>
 
 - Multi Asset (TD3)
 
