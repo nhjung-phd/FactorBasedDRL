@@ -128,6 +128,9 @@ Result
   </p>
 
 - Multi Asset (TD3)
+  <p align="center">
+  <img src="Result/Fig6.png" alt="Fig 6. Multi Asset SAC" />
+  </p>
 
 Setup
 ---
