@@ -134,4 +134,137 @@ Result
 
 Setup
 ---
+Here’s the revised README section in **English**, now including **PPO**, **SAC**, and **TD3** details so you can drop it straight into your GitHub repo.
+
+---
+
+## Model (MLP) Architecture
+
+* **Policy**: `MlpPolicy` (Stable-Baselines3)
+* **Hidden layers**: 2
+* **Units per layer**: 64, 64 *(SB3 default; no `policy_kwargs` override in the notebook)*
+* **Activation function**: `Tanh` *(SB3 default)*
+* **Input (observation) shape**: `2 × N + 1`
+
+  * Composition: `[cash] + [prices for N assets] + [current holdings for N assets]`
+* **Output (action) shape**: `N + 1`
+
+  * Composition: `[cash_weight] + [asset weights (N)]`
+  * Softmax normalization ensures total weight = 1
+* **Environment constants**:
+
+  * Initial capital: `INITIAL_ACCOUNT_BALANCE = 1_000_000`
+  * Transaction fee: `TRANSACTION_FEE_PERCENT = 0.001` (0.1%)
+
+> *Note*: While momentum, volatility, moving-average deviation, and volume Z-score are calculated in preprocessing, they are **not** currently included in the observation space.
+
+---
+
+## Algorithms & Hyperparameters
+
+### PPO (default in the notebook)
+
+Default Stable-Baselines3 values are used:
+
+| Parameter       | Value |
+| --------------- | ----- |
+| learning\_rate  | 3e-4  |
+| gamma (γ)       | 0.99  |
+| gae\_lambda (λ) | 0.95  |
+| clip\_range     | 0.2   |
+| n\_steps        | 2048  |
+| batch\_size     | 64    |
+| n\_epochs       | 10    |
+| ent\_coef       | 0.0   |
+| vf\_coef        | 0.5   |
+| max\_grad\_norm | 0.5   |
+| activation\_fn  | Tanh  |
+
+---
+
+### SAC (optional)
+
+Default SB3 values unless overridden:
+
+| Parameter                | Value                 |
+| ------------------------ | --------------------- |
+| learning\_rate           | 3e-4                  |
+| buffer\_size             | 1,000,000             |
+| learning\_starts         | 100                   |
+| batch\_size              | 256                   |
+| tau                      | 0.005                 |
+| gamma (γ)                | 0.99                  |
+| train\_freq              | 1                     |
+| gradient\_steps          | 1                     |
+| ent\_coef                | ‘auto’                |
+| target\_update\_interval | 1                     |
+| policy\_kwargs           | net\_arch=\[256, 256] |
+
+---
+
+### TD3 (optional)
+
+Default SB3 values unless overridden:
+
+| Parameter        | Value                     |
+| ---------------- | ------------------------- |
+| learning\_rate   | 1e-3                      |
+| buffer\_size     | 1,000,000                 |
+| learning\_starts | 100                       |
+| batch\_size      | 100                       |
+| tau              | 0.005                     |
+| gamma (γ)        | 0.99                      |
+| train\_freq      | (1, ‘episode’)            |
+| gradient\_steps  | -1 (train at episode end) |
+| policy\_kwargs   | net\_arch=\[400, 300]     |
+| action\_noise    | Normal(μ=0, σ=0.1)        |
+
+---
+
+## Reproducibility
+
+* **Random seed**
+
+  * `torch.manual_seed(42)`
+  * `np.random.seed(42)`
+* **Device**: Automatic CPU/GPU selection via `torch.cuda.is_available()`
+
+---
+
+## Data Splits
+
+* **Downloader**: `yfinance` (e.g., `AAPL`, `GOOGL`, `MSFT`, `BTC-USD`, `SPY`)
+* **Date range (default)**:
+
+  * `start_date = "2014-09-17"`
+  * `end_date = "2025-06-27"`
+    *(earliest date may vary by symbol availability)*
+* **Train/Test split**:
+
+  * `split_ratio = 0.70` → Train 70% / Test 30%
+  * Sequential split (no shuffling)
+
+---
+
+## How to Run (Colab/Local)
+
+```bash
+# 1) Install dependencies
+pip install -q yfinance pandas numpy stable-baselines3 torch
+
+# 2) Download data & build environment
+# 3) Select algorithm: PPO, SAC, or TD3
+# 4) Train and evaluate model
+```
+
+---
+
+## Notes
+
+* Actions are portfolio weights, normalized via Softmax.
+* Transaction cost penalty (0.1%) discourages excessive rebalancing.
+* Adding technical indicators to the observation space would require adjusting input dimensions and normalization.
+
+---
+
 
