@@ -104,32 +104,32 @@ Result
 
 - Equity Asset (PPO)
   <p align="center">
-  <img src="Result/Fig1.png" alt="Fig 1. Equity Asset PPO" />
+  <img src="Result/Fig2.png" alt="Fig 1. Equity Asset PPO" />
   </p>
 
 - Crypto Asset (PPO)
   <p align="center">
-  <img src="Result/Fig2.png" alt="Fig 2. Crypto Asset PPO" />
+  <img src="Result/Fig3.png" alt="Fig 2. Crypto Asset PPO" />
   </p>
 
 - Macro Asset (PPO)
   <p align="center">
-  <img src="Result/Fig3.png" alt="Fig 3. Macro Asset PPO" />
+  <img src="Result/Fig4.png" alt="Fig 3. Macro Asset PPO" />
   </p>
 
 - Multi Asset (PPO)
   <p align="center">
-  <img src="Result/Fig4.png" alt="Fig 4. Multi Asset PPO" />
+  <img src="Result/Fig5.png" alt="Fig 4. Multi Asset PPO" />
   </p>
 
 - Multi Asset (SAC)
   <p align="center">
-  <img src="Result/Fig5.png" alt="Fig 5. Multi Asset SAC" />
+  <img src="Result/Fig6.png" alt="Fig 5. Multi Asset SAC" />
   </p>
 
 - Multi Asset (TD3)
   <p align="center">
-  <img src="Result/Fig6.png" alt="Fig 6. Multi Asset SAC" />
+  <img src="Result/Fig7.png" alt="Fig 6. Multi Asset SAC" />
   </p>
 
 Setup
