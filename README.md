@@ -107,30 +107,107 @@ Result
   <img src="Result/Fig2.png" alt="Fig 1. Equity Asset PPO" />
   </p>
 
+### Table: Performance metrics of equity-based portfolio strategies
+
+| Strategy      | Sharpe | Sortino | Cumulative Return | Annualized Return | Volatility | CAGR  | MDD     | Turnover |
+|---------------|--------|---------|-------------------|-------------------|------------|-------|---------|----------|
+| Equal-Weight  | 1.031  | 1.426   | 78.29%            | 20.26%            | 19.64%     | 20.26% | -18.73% | 0.86     |
+| Mean-Variance | 0.320  | 0.433   | 13.21%            | 4.20%             | 13.13%     | 4.20%  | -16.03% | 0.61     |
+| Sharpe-PPO    | 1.102  | 1.581   | 62.38%            | 16.68%            | 15.14%     | 16.68% | -16.16% | 0.68     |
+| Sortino-PPO   | 1.111  | 1.594   | 63.24%            | 16.87%            | 15.19%     | 16.87% | -16.14% | 0.69     |
+| Momentum-β    | 1.190  | 1.703   | 68.22%            | 17.99%            | 15.12%     | 17.99% | -16.33% | 0.68     |
+| Dynamic-β     | 1.157  | 1.652   | 69.29%            | 18.24%            | 15.77%     | 18.24% | -16.78% | 0.71     |
+| Static-β      | 1.111  | 1.594   | 63.24%            | 16.87%            | 15.19%     | 16.87% | -16.14% | 0.69     |
+
 - Crypto Asset (PPO)
   <p align="center">
   <img src="Result/Fig3.png" alt="Fig 2. Crypto Asset PPO" />
   </p>
+
+### Table: Performance Comparison of Crypto-Based Portfolio Strategies
+
+| Strategy     | Sharpe | Sortino | Cumulative Return | Annualized Return | Volatility | CAGR  | MDD     | Turnover |
+|--------------|--------|---------|-------------------|-------------------|------------|-------|---------|----------|
+| Equal-Weight | 1.112  | 1.723   | 109.92%           | 63.10%            | 56.73%     | 63.10% | -43.44% | 2.61     |
+| Mean-Variance| 1.094  | 1.743   | 89.30%            | 57.71%            | 52.75%     | 57.71% | -33.09% | 2.37     |
+| Sharpe-PPO   | 0.554  | 0.840   | 39.77%            | 24.57%            | 44.35%     | 24.57% | -40.69% | 2.01     |
+| Sortino-PPO  | 0.585  | 0.893   | 41.80%            | 25.76%            | 44.01%     | 25.76% | -40.62% | 1.99     |
+| Momentum-β   | 0.487  | 0.744   | 35.35%            | 21.97%            | 45.15%     | 21.97% | -41.57% | 2.05     |
+| Dynamic-β    | 0.430  | 0.646   | 31.62%            | 19.76%            | 45.95%     | 19.76% | -42.76% | 2.08     |
+| Static-β     | 0.585  | 0.893   | 41.80%            | 25.76%            | 44.01%     | 25.76% | -40.62% | 1.99     |
+
 
 - Macro Asset (PPO)
   <p align="center">
   <img src="Result/Fig4.png" alt="Fig 3. Macro Asset PPO" />
   </p>
 
+### Table: Performance of Macro-Asset Portfolio Strategies
+
+| Strategy       | Sharpe | Sortino | Cumulative Return | Annualized Return | Volatility | CAGR  | MDD     | Turnover |
+|----------------|--------|---------|-------------------|-------------------|------------|-------|---------|----------|
+| Equal-Weight   | 0.570  | 0.972   | 22.55%            | 6.70%             | 11.75%     | 6.70% | -13.83% | 0.58     |
+| Mean-Variance  | 0.190  | 0.304   | 3.88%             | 1.27%             | 6.67%      | 1.27% | -9.30%  | 0.32     |
+| Sharpe-PPO     | 0.669  | 1.095   | 18.66%            | 5.60%             | 8.36%      | 5.60% | -10.02% | 0.41     |
+| Sortino-PPO    | 0.665  | 1.089   | 18.48%            | 5.54%             | 8.34%      | 5.54% | -10.04% | 0.40     |
+| Momentum-β     | 0.625  | 1.029   | 18.22%            | 5.47%             | 8.75%      | 5.47% | -10.99% | 0.43     |
+| Dynamic-β      | 0.637  | 1.042   | 17.28%            | 5.20%             | 8.17%      | 5.20% | -9.59%  | 0.40     |
+| Static-β       | 0.631  | 1.038   | 17.79%            | 5.35%             | 8.48%      | 5.35% | -10.49% | 0.41     |
+
+
 - Multi Asset (PPO)
   <p align="center">
   <img src="Result/Fig5.png" alt="Fig 4. Multi Asset PPO" />
   </p>
+
+### Table: Performance metrics of multi-asset portfolios (PPO-based)
+
+| Strategy       | Sharpe | Sortino | Cumulative Return | Annualized Return | Volatility | CAGR  | MDD     | Turnover |
+|----------------|--------|---------|-------------------|-------------------|------------|-------|---------|----------|
+| Equal-Weight   | 1.13   | 1.54    | 73.2%             | 19.2%             | 17.0%      | 19.2% | -18.0%  | 0.75     |
+| Mean-Variance  | 0.35   | 0.53    | 7.6%              | 2.5%              | 7.0%       | 2.5%  | -10.5%  | 0.33     |
+| Sharpe-PPO     | 0.99   | 1.37    | 47.5%             | 13.2%             | 13.3%      | 13.2% | -13.6%  | 0.60     |
+| Sortino-PPO    | 1.00   | 1.39    | 48.1%             | 13.3%             | 13.3%      | 13.3% | -13.6%  | 0.60     |
+| Momentum-β     | 1.04   | 1.45    | 52.2%             | 14.3%             | 13.7%      | 14.3% | -14.1%  | 0.61     |
+| Dynamic-β      | 1.03   | 1.45    | 51.7%             | 14.2%             | 13.8%      | 14.2% | -14.2%  | 0.62     |
+| Static-β       | 1.00   | 1.39    | 48.1%             | 13.3%             | 13.3%      | 13.3% | -13.6%  | 0.60     |
+
 
 - Multi Asset (SAC)
   <p align="center">
   <img src="Result/Fig6.png" alt="Fig 5. Multi Asset SAC" />
   </p>
 
+### Table: Performance metrics of multi-asset portfolios (SAC-based)
+
+| Strategy       | Sharpe | Sortino | Cumulative Return | Annualized Return | Volatility | CAGR  | MDD     | Turnover |
+|----------------|--------|---------|-------------------|-------------------|------------|-------|---------|----------|
+| Equal-Weight   | 1.13   | 1.54    | 73.2%             | 19.2%             | 17.0%      | 19.2% | -18.0%  | 0.75     |
+| Mean-Variance  | 0.35   | 0.53    | 7.6%              | 2.5%              | 7.0%       | 2.5%  | -10.5%  | 0.33     |
+| Sharpe-SAC     | 0.98   | 1.40    | 46.3%             | 12.9%             | 13.2%      | 12.9% | -13.9%  | 0.59     |
+| Sortino-SAC    | 1.17   | 1.71    | 60.1%             | 16.2%             | 13.8%      | 16.2% | -13.9%  | 0.62     |
+| Momentum-β     | 0.98   | 1.41    | 48.3%             | 13.4%             | 13.7%      | 13.4% | -14.4%  | 0.62     |
+| Dynamic-β      | 1.21   | 1.80    | 59.8%             | 16.1%             | 13.2%      | 16.1% | -14.3%  | 0.60     |
+| Static-β       | 1.21   | 1.72    | 61.6%             | 16.5%             | 13.6%      | 16.5% | -14.8%  | 0.61     |
+
+
 - Multi Asset (TD3)
   <p align="center">
   <img src="Result/Fig7.png" alt="Fig 6. Multi Asset SAC" />
   </p>
+
+### Table: Performance metrics of multi-asset portfolios (TD3-based)
+
+| Strategy       | Sharpe | Sortino | Cumulative Return | Annualized Return | Volatility | CAGR  | MDD     | Turnover |
+|----------------|--------|---------|-------------------|-------------------|------------|-------|---------|----------|
+| Equal-Weight   | 1.13   | 1.54    | 73.2%             | 19.2%             | 17.0%      | 19.2% | -18.0%  | 0.75     |
+| Mean-Variance  | 0.35   | 0.53    | 7.6%              | 2.5%              | 7.0%       | 2.5%  | -10.5%  | 0.33     |
+| Sharpe-TD3     | 1.17   | 1.61    | 64.9%             | 17.2%             | 14.8%      | 17.2% | -14.9%  | 0.65     |
+| Sortino-TD3    | 1.22   | 1.82    | 63.6%             | 17.0%             | 13.9%      | 17.0% | -14.6%  | 0.64     |
+| Momentum-β     | 1.34   | 1.91    | 75.4%             | 19.6%             | 14.6%      | 19.6% | -14.8%  | 0.65     |
+| Dynamic-β      | 1.20   | 1.73    | 85.1%             | 21.6%             | 18.0%      | 21.6% | -18.5%  | 0.81     |
+| Static-β       | 1.31   | 1.89    | 78.7%             | 20.3%             | 15.5%      | 20.3% | -16.7%  | 0.70     |
+
 
 Setup
 ---
