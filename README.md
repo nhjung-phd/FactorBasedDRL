@@ -124,35 +124,34 @@ Result
   <img src="Result/Fig3.png" alt="Fig 2. Crypto Asset PPO" />
   </p>
 
-### Table: Performance Comparison of Crypto-Based Portfolio Strategies
+### Table: Performance metrics of crypto-based portfolio strategies (w=60)
 
-| Strategy     | Sharpe | Sortino | Cumulative Return | Annualized Return | Volatility | CAGR  | MDD     | Turnover |
-|--------------|--------|---------|-------------------|-------------------|------------|-------|---------|----------|
-| Equal-Weight | 1.112  | 1.723   | 109.92%           | 63.10%            | 56.73%     | 63.10% | -43.44% | 2.61     |
-| Mean-Variance| 1.094  | 1.743   | 89.30%            | 57.71%            | 52.75%     | 57.71% | -33.09% | 2.37     |
-| Sharpe-PPO   | 0.554  | 0.840   | 39.77%            | 24.57%            | 44.35%     | 24.57% | -40.69% | 2.01     |
-| Sortino-PPO  | 0.585  | 0.893   | 41.80%            | 25.76%            | 44.01%     | 25.76% | -40.62% | 1.99     |
-| Momentum-β   | 0.487  | 0.744   | 35.35%            | 21.97%            | 45.15%     | 21.97% | -41.57% | 2.05     |
-| Dynamic-β    | 0.430  | 0.646   | 31.62%            | 19.76%            | 45.95%     | 19.76% | -42.76% | 2.08     |
-| Static-β     | 0.585  | 0.893   | 41.80%            | 25.76%            | 44.01%     | 25.76% | -40.62% | 1.99     |
-
+| Strategy | Sharpe | Sortino | Cumulative Return | Annualized Return | Volatility | CAGR | MDD | Turnover |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Equal-Weight | 0.932 | 1.648 | 72.26% | 53.12% | 56.98% | 44.69% | -43.44% | 0.0131 |
+| Mean-Variance | 0.954 | 1.740 | 64.68% | 50.82% | 53.28% | 44.42% | -33.09% | 0.0615 |
+| Sharpe-PPO | 0.816 | 1.419 | 52.48% | 41.20% | 50.47% | 32.98% | -41.72% | 0.0490 |
+| Sortino-PPO | 0.818 | 1.421 | 53.22% | 41.92% | 51.25% | 33.41% | -41.91% | 0.0434 |
+| Momentum-β | 0.804 | 1.408 | 51.88% | 41.53% | 51.69% | 32.62% | -44.72% | 0.0523 |
+| Dynamic-β | 0.802 | 1.391 | 51.25% | 40.99% | 51.13% | 32.25% | -43.19% | 0.0510 |
+| Static-β | 0.807 | 1.411 | 51.81% | 41.14% | 50.97% | 32.58% | -43.19% | 0.0544 |
 
 - Macro Asset (PPO)
   <p align="center">
   <img src="Result/Fig4.png" alt="Fig 3. Macro Asset PPO" />
   </p>
 
-### Table: Performance of Macro-Asset Portfolio Strategies
+### Table: Performance metrics of macro-asset portfolio strategies (w=60)
 
-| Strategy       | Sharpe | Sortino | Cumulative Return | Annualized Return | Volatility | CAGR  | MDD     | Turnover |
-|----------------|--------|---------|-------------------|-------------------|------------|-------|---------|----------|
-| Equal-Weight   | 0.570  | 0.972   | 22.55%            | 6.70%             | 11.75%     | 6.70% | -13.83% | 0.58     |
-| Mean-Variance  | 0.190  | 0.304   | 3.88%             | 1.27%             | 6.67%      | 1.27% | -9.30%  | 0.32     |
-| Sharpe-PPO     | 0.669  | 1.095   | 18.66%            | 5.60%             | 8.36%      | 5.60% | -10.02% | 0.41     |
-| Sortino-PPO    | 0.665  | 1.089   | 18.48%            | 5.54%             | 8.34%      | 5.54% | -10.04% | 0.40     |
-| Momentum-β     | 0.625  | 1.029   | 18.22%            | 5.47%             | 8.75%      | 5.47% | -10.99% | 0.43     |
-| Dynamic-β      | 0.637  | 1.042   | 17.28%            | 5.20%             | 8.17%      | 5.20% | -9.59%  | 0.40     |
-| Static-β       | 0.631  | 1.038   | 17.79%            | 5.35%             | 8.48%      | 5.35% | -10.49% | 0.41     |
+| Strategy         | Sharpe | Sortino | Cumulative Return | Annualized Return | Volatility | CAGR   | MDD      | Turnover | Cost   |
+| :---             | :---:  | :---:   | :---:             | :---:             | :---:      | :---:  | :---:    | :---:    | :---:  |
+| Equal-Weight     | 0.678  | 1.219   | 25.13%            | 7.94%             | 11.71%     | 7.52%  | -13.17%  | 0.49     | 0.12%  |
+| Mean-Variance    | 0.251  | 0.435   | 4.41%             | 1.67%             | 6.67%      | 1.46%  | -9.30%   | 2.19     | 0.56%  |
+| Sharpe-PPO       | 0.836  | 1.470   | 23.15%            | 7.08%             | 8.47%      | 6.95%  | -9.98%   | 10.28    | 2.59%  |
+| Sortino-PPO      | 0.827  | 1.456   | 22.65%            | 6.94%             | 8.39%      | 6.81%  | -9.86%   | 10.65    | 2.69%  |
+| Momentum-β       | 0.772  | 1.355   | 20.68%            | 6.41%             | 8.30%      | 6.25%  | -10.00%  | 10.08    | 2.54%  |
+| Dynamic-β        | 0.706  | 1.232   | 18.78%            | 5.90%             | 8.36%      | 5.71%  | -10.39%  | 10.42    | 2.62%  |
+| Static-β         | 0.747  | 1.310   | 19.81%            | 6.17%             | 8.26%      | 6.01%  | -10.01%  | 10.18    | 2.56%  |
 
 
 - Multi Asset (PPO)
@@ -160,17 +159,17 @@ Result
   <img src="Result/Fig5.png" alt="Fig 4. Multi Asset PPO" />
   </p>
 
-### Table: Performance metrics of multi-asset portfolios (PPO-based)
+### Table: Performance metrics of multi-asset portfolios (PPO-based, w=60)
 
-| Strategy       | Sharpe | Sortino | Cumulative Return | Annualized Return | Volatility | CAGR  | MDD     | Turnover |
-|----------------|--------|---------|-------------------|-------------------|------------|-------|---------|----------|
-| Equal-Weight   | 1.13   | 1.54    | 73.2%             | 19.2%             | 17.0%      | 19.2% | -18.0%  | 0.75     |
-| Mean-Variance  | 0.35   | 0.53    | 7.6%              | 2.5%              | 7.0%       | 2.5%  | -10.5%  | 0.33     |
-| Sharpe-PPO     | 0.99   | 1.37    | 47.5%             | 13.2%             | 13.3%      | 13.2% | -13.6%  | 0.60     |
-| Sortino-PPO    | 1.00   | 1.39    | 48.1%             | 13.3%             | 13.3%      | 13.3% | -13.6%  | 0.60     |
-| Momentum-β     | 1.04   | 1.45    | 52.2%             | 14.3%             | 13.7%      | 14.3% | -14.1%  | 0.61     |
-| Dynamic-β      | 1.03   | 1.45    | 51.7%             | 14.2%             | 13.8%      | 14.2% | -14.2%  | 0.62     |
-| Static-β       | 1.00   | 1.39    | 48.1%             | 13.3%             | 13.3%      | 13.3% | -13.6%  | 0.60     |
+| Strategy         | Sharpe | Sortino | CumuRet | AnnRet  | Volatility | CAGR   | MDD      | Turnover | Cost   |
+| :---             | :---:  | :---:   | :---:   | :---:   | :---:      | :---:  | :---:    | :---:    | :---:  |
+| Equal-Weight     | 1.231  | 2.076   | 80.57%  | 20.51%  | 16.66%     | 21.07% | -16.70%  | 0.98     | 0.25%  |
+| Mean-Variance    | 0.360  | 0.599   | 6.99%   | 2.51%   | 6.99%      | 2.30%  | -10.46%  | 8.23     | 2.07%  |
+| Sharpe-PPO       | 1.409  | 2.441   | 89.75%  | 21.88%  | 15.52%     | 22.96% | -15.79%  | 1.65     | 0.42%  |
+| Sortino-PPO      | 1.409  | 2.440   | 89.90%  | 21.90%  | 15.54%     | 22.99% | -15.90%  | 1.67     | 0.42%  |
+| Momentum-β       | 1.409  | 2.433   | 90.94%  | 22.10%  | 15.68%     | 23.21% | -15.87%  | 1.61     | 0.41%  |
+| Dynamic-β        | 1.397  | 2.416   | 89.02%  | 21.76%  | 15.57%     | 22.81% | -15.89%  | 1.63     | 0.41%  |
+| Static-β         | 1.371  | 2.367   | 86.32%  | 21.29%  | 15.52%     | 22.24% | -15.91%  | 1.75     | 0.44%  |
 
 
 - Multi Asset (SAC)
@@ -178,35 +177,34 @@ Result
   <img src="Result/Fig6.png" alt="Fig 5. Multi Asset SAC" />
   </p>
 
-### Table: Performance metrics of multi-asset portfolios (SAC-based)
+### Table: Performance metrics of multi-asset portfolios (SAC-based, w=60)
 
-| Strategy       | Sharpe | Sortino | Cumulative Return | Annualized Return | Volatility | CAGR  | MDD     | Turnover |
-|----------------|--------|---------|-------------------|-------------------|------------|-------|---------|----------|
-| Equal-Weight   | 1.13   | 1.54    | 73.2%             | 19.2%             | 17.0%      | 19.2% | -18.0%  | 0.75     |
-| Mean-Variance  | 0.35   | 0.53    | 7.6%              | 2.5%              | 7.0%       | 2.5%  | -10.5%  | 0.33     |
-| Sharpe-SAC     | 0.98   | 1.40    | 46.3%             | 12.9%             | 13.2%      | 12.9% | -13.9%  | 0.59     |
-| Sortino-SAC    | 1.17   | 1.71    | 60.1%             | 16.2%             | 13.8%      | 16.2% | -13.9%  | 0.62     |
-| Momentum-β     | 0.98   | 1.41    | 48.3%             | 13.4%             | 13.7%      | 13.4% | -14.4%  | 0.62     |
-| Dynamic-β      | 1.21   | 1.80    | 59.8%             | 16.1%             | 13.2%      | 16.1% | -14.3%  | 0.60     |
-| Static-β       | 1.21   | 1.72    | 61.6%             | 16.5%             | 13.6%      | 16.5% | -14.8%  | 0.61     |
-
+| Strategy         | Sharpe | Sortino | CumRet  | AnnRet  | Volatility | CAGR   | MDD      | Turnover | Cost   |
+| :---             | :---:  | :---:   | :---:   | :---:   | :---:      | :---:  | :---:    | :---:    | :---:  |
+| Equal-Weight     | 1.231  | 2.076   | 80.57%  | 20.51%  | 16.66%     | 21.07% | -16.70%  | 0.98     | 0.25%  |
+| Mean-Variance    | 0.360  | 0.599   | 6.99%   | 2.51%   | 6.99%      | 2.30%  | -10.46%  | 8.23     | 2.07%  |
+| Sharpe-SAC       | 1.274  | 2.212   | 81.46%  | 20.53%  | 16.11%     | 21.20% | -17.50%  | 2.65     | 0.67%  |
+| Sortino-SAC      | 1.326  | 2.284   | 78.98%  | 19.91%  | 15.02%     | 20.66% | -14.94%  | 1.83     | 0.46%  |
+| Momentum-β       | 1.222  | 2.121   | 77.03%  | 19.73%  | 16.15%     | 20.24% | -16.58%  | 1.84     | 0.46%  |
+| Dynamic-β        | 1.314  | 2.284   | 73.86%  | 18.88%  | 14.37%     | 19.54% | -14.74%  | 2.11     | 0.53%  |
+| Static-β         | 1.321  | 2.314   | 86.92%  | 21.51%  | 16.28%     | 22.36% | -16.90%  | 2.35     | 0.59%  |
 
 - Multi Asset (TD3)
   <p align="center">
   <img src="Result/Fig7.png" alt="Fig 6. Multi Asset SAC" />
   </p>
 
-### Table: Performance metrics of multi-asset portfolios (TD3-based)
+### Table: Performance metrics of multi-asset portfolios (TD3-based, w=60)
 
-| Strategy       | Sharpe | Sortino | Cumulative Return | Annualized Return | Volatility | CAGR  | MDD     | Turnover |
-|----------------|--------|---------|-------------------|-------------------|------------|-------|---------|----------|
-| Equal-Weight   | 1.13   | 1.54    | 73.2%             | 19.2%             | 17.0%      | 19.2% | -18.0%  | 0.75     |
-| Mean-Variance  | 0.35   | 0.53    | 7.6%              | 2.5%              | 7.0%       | 2.5%  | -10.5%  | 0.33     |
-| Sharpe-TD3     | 1.17   | 1.61    | 64.9%             | 17.2%             | 14.8%      | 17.2% | -14.9%  | 0.65     |
-| Sortino-TD3    | 1.22   | 1.82    | 63.6%             | 17.0%             | 13.9%      | 17.0% | -14.6%  | 0.64     |
-| Momentum-β     | 1.34   | 1.91    | 75.4%             | 19.6%             | 14.6%      | 19.6% | -14.8%  | 0.65     |
-| Dynamic-β      | 1.20   | 1.73    | 85.1%             | 21.6%             | 18.0%      | 21.6% | -18.5%  | 0.81     |
-| Static-β       | 1.31   | 1.89    | 78.7%             | 20.3%             | 15.5%      | 20.3% | -16.7%  | 0.70     |
+| Strategy         | Sharpe | Sortino | CumRet  | AnnRet  | Volatility | CAGR   | MDD      | Turnover | Cost   |
+| :---             | :---:  | :---:   | :---:   | :---:   | :---:      | :---:  | :---:    | :---:    | :---:  |
+| Equal-Weight     | 1.231  | 2.076   | 80.57%  | 20.51%  | 16.66%     | 21.07% | -16.70%  | 0.98     | 0.25%  |
+| Mean-Variance    | 0.360  | 0.599   | 6.99%   | 2.51%   | 6.99%      | 2.30%  | -10.46%  | 8.23     | 2.07%  |
+| Sharpe-TD3       | 1.516  | 2.647   | 91.66%  | 22.05%  | 14.55%     | 23.36% | -14.90%  | 2.59     | 0.65%  |
+| Sortino-TD3      | 1.588  | 2.785   | 87.74%  | 21.22%  | 13.36%     | 22.54% | -14.00%  | 3.20     | 0.81%  |
+| Momentum-β       | 1.272  | 2.215   | 71.12%  | 18.38%  | 14.44%     | 18.93% | -14.80%  | 2.91     | 0.73%  |
+| Dynamic-β        | 1.545  | 2.749   | 92.12%  | 22.09%  | 14.30%     | 23.45% | -14.39%  | 2.64     | 0.66%  |
+| Static-β         | 1.461  | 2.581   | 88.78%  | 21.60%  | 14.78%     | 22.75% | -14.98%  | 2.81     | 0.71%  |
 
 
 Setup
@@ -222,14 +220,11 @@ Here’s the revised README section in **English**, now including **PPO**, **SAC
 * **Units per layer**: 64, 64 *(SB3 default; no `policy_kwargs` override in the notebook)*
 * **Activation function**: `Tanh` *(SB3 default)*
 * **Input (observation) shape**: `2 × N + 1`
-
   * Composition: `[cash] + [prices for N assets] + [current holdings for N assets]`
-* **Output (action) shape**: `N + 1`
-
-  * Composition: `[cash_weight] + [asset weights (N)]`
-  * Softmax normalization ensures total weight = 1
+* **Output (action) shape**: `N`
+  * Composition: `[asset weights (N)]`
+  * Note: The `action_space` dimension is equal to the number of assets. Softmax normalization ensures total weight = 1.
 * **Environment constants**:
-
   * Initial capital: `INITIAL_ACCOUNT_BALANCE = 1_000_000`
   * Transaction fee: `TRANSACTION_FEE_PERCENT = 0.001` (0.1%)
 
@@ -245,17 +240,17 @@ Default Stable-Baselines3 values are used:
 
 | Parameter       | Value |
 | --------------- | ----- |
-| learning\_rate  | 3e-4  |
+| learning_rate   | 3e-4  |
 | gamma (γ)       | 0.99  |
-| gae\_lambda (λ) | 0.95  |
-| clip\_range     | 0.2   |
-| n\_steps        | 2048  |
-| batch\_size     | 64    |
-| n\_epochs       | 10    |
-| ent\_coef       | 0.0   |
-| vf\_coef        | 0.5   |
-| max\_grad\_norm | 0.5   |
-| activation\_fn  | Tanh  |
+| gae_lambda (λ)  | 0.95  |
+| clip_range      | 0.2   |
+| n_steps         | 2048  |
+| batch_size      | 64    |
+| n_epochs        | 10    |
+| ent_coef        | 0.0   |
+| vf_coef         | 0.5   |
+| max_grad_norm   | 0.5   |
+| activation_fn   | Tanh  |
 
 ---
 
@@ -265,17 +260,17 @@ Default SB3 values unless overridden:
 
 | Parameter                | Value                 |
 | ------------------------ | --------------------- |
-| learning\_rate           | 3e-4                  |
-| buffer\_size             | 1,000,000             |
-| learning\_starts         | 100                   |
-| batch\_size              | 256                   |
+| learning_rate            | 3e-4                  |
+| buffer_size              | 1,000,000             |
+| learning_starts          | 100                   |
+| batch_size               | 256                   |
 | tau                      | 0.005                 |
 | gamma (γ)                | 0.99                  |
-| train\_freq              | 1                     |
-| gradient\_steps          | 1                     |
-| ent\_coef                | ‘auto’                |
-| target\_update\_interval | 1                     |
-| policy\_kwargs           | net\_arch=\[256, 256] |
+| train_freq               | 1                     |
+| gradient_steps           | 1                     |
+| ent_coef                 | ‘auto’                |
+| target_update_interval   | 1                     |
+| policy_kwargs            | net_arch=[256, 256]   |
 
 ---
 
@@ -285,23 +280,22 @@ Default SB3 values unless overridden:
 
 | Parameter        | Value                     |
 | ---------------- | ------------------------- |
-| learning\_rate   | 1e-3                      |
-| buffer\_size     | 1,000,000                 |
-| learning\_starts | 100                       |
-| batch\_size      | 100                       |
+| learning_rate    | 1e-3                      |
+| buffer_size      | 1,000,000                 |
+| learning_starts  | 100                       |
+| batch_size       | 100                       |
 | tau              | 0.005                     |
 | gamma (γ)        | 0.99                      |
-| train\_freq      | (1, ‘episode’)            |
-| gradient\_steps  | -1 (train at episode end) |
-| policy\_kwargs   | net\_arch=\[400, 300]     |
-| action\_noise    | Normal(μ=0, σ=0.1)        |
+| train_freq       | (1, ‘episode’)            |
+| gradient_steps   | -1 (train at episode end) |
+| policy_kwargs    | net_arch=[400, 300]       |
+| action_noise     | Normal(μ=0, σ=0.1)        |
 
 ---
 
 ## Reproducibility
 
 * **Random seed**
-
   * `torch.manual_seed(42)`
   * `np.random.seed(42)`
 * **Device**: Automatic CPU/GPU selection via `torch.cuda.is_available()`
@@ -311,17 +305,12 @@ Default SB3 values unless overridden:
 ## Data Splits
 
 * **Downloader**: `yfinance` (e.g., `AAPL`, `GOOGL`, `MSFT`, `BTC-USD`, `SPY`)
-* **Date range (default)**:
-
-  * `start_date = "2014-09-17"`
-  * `end_date = "2025-06-27"`
-    *(earliest date may vary by symbol availability)*
+* **Date range**:
+  * `start_date = "2014-10-21"`
+  * `end_date = "2025-06-30"`
 * **Train/Test split**:
-
   * `split_ratio = 0.70` → Train 70% / Test 30%
   * Sequential split (no shuffling)
-
----
 
 ## How to Run (Colab/Local)
 
